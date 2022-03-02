@@ -4,6 +4,7 @@ import { BlogComponent } from './Pages/blog/blog.component';
 import { FormularioComponent } from './Pages/formulario/formulario.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { PruebasComponent } from './Pages/pruebas/pruebas.component';
+import { ErrorComponent } from './Pages/error/error.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path:'pagina-de-pruebas',
     component: PruebasComponent
+  },
+  {
+    path: '**',
+    component: ErrorComponent
   }
   
 ];
