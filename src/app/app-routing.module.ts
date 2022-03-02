@@ -5,6 +5,7 @@ import { FormularioComponent } from './Pages/formulario/formulario.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { PruebasComponent } from './Pages/pruebas/pruebas.component';
 import { ErrorComponent } from './Pages/error/error.component';
+import { ArticlesComponent } from './components/articles/articles.component';
 
 const routes: Routes = [
   {
@@ -23,10 +24,10 @@ const routes: Routes = [
     path: 'formulario',
     component: FormularioComponent
   },
-  // {
-  //   path: 'articles',
-  //   component: ArticlesComponent
-  // },
+  {
+    path: 'articles',
+    component: ArticlesComponent
+  },
   {
     path:'pagina-de-pruebas',
     component: PruebasComponent
