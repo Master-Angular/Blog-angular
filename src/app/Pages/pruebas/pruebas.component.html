@@ -1,1 +1,11 @@
-<p>pruebas works!</p>
+<h1 class="subheader">Página de Pruebas</h1>
+
+<div *ngIf="param1 && param2">
+    <h2>Párametro 1: {{param1}}</h2>
+    <h2>Párametro 2: {{param2}}</h2>
+</div>
+
+<div *ngIf="!param1 || !param2">
+    <h2>No hay párametros por url</h2>
+</div>
+
