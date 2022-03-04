@@ -26,4 +26,8 @@ export class PruebasComponent implements OnInit {
 
   }
 
+  redireccion(){
+    this._router.navigate(['/pagina-de-pruebas', 'param1', 'param2']); // Navegar a otra url
+  }
+
 }
