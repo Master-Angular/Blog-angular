@@ -29,7 +29,11 @@ const routes: Routes = [
     component: ArticlesComponent
   },
   {
-    path:'pagina-de-pruebas',
+    path:'pagina-de-pruebas', //pasar parametros por url
+    component: PruebasComponent
+  },
+  {
+    path:'pagina-de-pruebas/:param1/:param2', //pasar parametros por url
     component: PruebasComponent
   },
   {

@@ -8,16 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class ArticlesComponent implements OnInit {
 
   public title: string;
+  public articles: Array<any>;
 
   constructor() {
-    this.title = 'Articles';
+    this.title = 'Hablemos de Angular';
+    this.articles = [
+      { title: 'Article 1', image: 'https://picsum.photos/id/237/200/300' },
+      { title: 'Article 2', image: 'https://picsum.photos/id/237/200/300' },
+      { title: 'Article 3', image: 'https://picsum.photos/id/237/200/300' },
+
+    ];
   }
 
   ngOnInit(): void {
   }
 
   cambiarTitulo() {
-    this.title = 'Nuevo titulo';
+    this.title = 'Acabas de usar Angular';
   }
 
 }
