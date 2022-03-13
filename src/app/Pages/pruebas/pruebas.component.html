@@ -1,12 +1,18 @@
 <h1 class="subheader">Página de Pruebas</h1>
 
-<div *ngIf="param1 && param2">
-    <h2>Párametro 1: {{param1}}</h2>
-    <h2>Párametro 2: {{param2}}</h2>
+<div *ngIf="param1 && param2;then siHayParametros else noHayParametros">
+    
 </div>
 
-<div *ngIf="!param1 || !param2">
+<ng-template #siHayParametros>
+    <h2>Párametro 1: {{param1}}</h2>
+    <h2>Párametro 2: {{param2}}</h2>
+</ng-template>
+
+
+<ng-template #noHayParametros>
     <h2>No hay párametros por url</h2>
-</div>
+</ng-template>
+
 
 <button (click)="redireccion()">Enviar Párametros por defecto</button>
