@@ -13,9 +13,9 @@ export class ArticlesComponent implements OnInit {
   constructor() {
     this.title = 'Hablemos de Angular';
     this.articles = [
-      { title: 'Article 1', image: 'https://picsum.photos/id/237/200/300' },
-      { title: 'Article 2', image: 'https://picsum.photos/id/237/200/300' },
-      { title: 'Article 3', image: 'https://picsum.photos/id/237/200/300' },
+      {year:2015, title: 'Article 1', image: 'https://picsum.photos/id/237/200/300' },
+      {year:2022, title: 'Article 2', image: 'https://picsum.photos/id/237/200/300' },
+      {year:2022, title: 'Article 3', image: 'https://picsum.photos/id/237/200/300' },
 
     ];
   }
