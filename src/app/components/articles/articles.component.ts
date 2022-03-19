@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../../models/article';
 
 @Component({
   selector: 'app-articles',
@@ -8,14 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class ArticlesComponent implements OnInit {
 
   public title: string;
-  public articles: Array<any>;
+  public articles: Array<Article>;
 
   constructor() {
     this.title = 'Hablemos de Angular';
     this.articles = [
-      {year:2015, title: 'Article 1', image: 'https://picsum.photos/id/237/200/300' },
-      {year:2022, title: 'Article 2', image: 'https://picsum.photos/id/237/200/300' },
-      {year:2022, title: 'Article 3', image: 'https://picsum.photos/id/237/200/300' },
+      new Article( 'Angular',2022, 'http://angular.io/assets/images/logos/angular/angular.png'),
+      new Article('Article 1',2020, 'https://picsum.photos/id/237/200/300'),
+      new Article('Article 2',2019, 'https://picsum.photos/id/237/200/300'),
+      new Article('Article 3',2012, 'https://picsum.photos/id/237/200/300')
 
     ];
   }
